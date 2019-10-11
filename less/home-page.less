@@ -4,6 +4,8 @@
 
   .intro {
 
+
+    
     h2 {
       padding: 15px;
     }
@@ -11,13 +13,21 @@
     p {
       padding:0 15px;
     }
+
+    img {
+      border-radius: 5px;
+      @media @mobile {
+        .width();
+      }
+    }
   
   }
+
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    .width();
 
     img {
       width: 28%;
@@ -25,10 +35,25 @@
       border-radius: 20px;
       height: 100%;
     }
+    @media @mobile {
+      .delete {
+        display:none;
+      }
+
+      .blastoff {
+        .width();
+      }
+    }
+
   }
 
   .visit-planets {
     padding: 15px;
+
+    @media @mobile {
+      width:80%;
+      margin-left: 9%;
+    }
 
     h3 {
       margin-top: 11px;
@@ -39,6 +64,7 @@
     }
   }
 
+
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
@@ -46,8 +72,22 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+          display: flex;
+          flex-direction: column;
+          flex-direction: column-reverse;
+          margin:0;
+          padding-bottom: 15px;
+      
+    }
+
     .walk-text {
       width: 50%;
+
+
+      @media @mobile {
+        .width();
+    }
 
       h3 {
         margin-bottom: 10px;
@@ -57,19 +97,38 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
-    }
+      .btn:hover {
+        background-color:#AFEEEE; 
+        color: black;
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
+        @media @mobile {
+          .width();
+          height:50px;
+          padding-top:15px;
+        }
+      } 
+    }
+        .walk-img {
+        .width();
+        margin-left: 4%;
+
+        @media @mobile {
+        // border:1px solid orange;
+        .width();
+        margin-right: 20%;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        }
+
+        img {
+        .width();
         height: auto;
         border-radius: 10px;
-      }
-    }
-  }
-}// home
+        margin-right: 20%;
+        margin-left: -29px;
+        }
+        }
+  
+}// ending tag for .walk
+
+}// ending tag for home

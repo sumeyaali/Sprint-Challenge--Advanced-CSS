@@ -1,1 +1,30 @@
 // Mixins Here
+
+    .btn(@bg-color, @width, @txt-color){
+    padding:2%;
+    background-color: @bg-color;
+    cursor: pointer;
+    width: @width;
+    text-align:center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color:@txt-color;
+    }
+
+.btn{
+    .btn(black, 100px, white );
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+
+  .display() {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .width() {
+      width:100%;
+  }
+  

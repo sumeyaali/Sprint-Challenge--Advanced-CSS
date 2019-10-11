@@ -1,1 +1,56 @@
 // Navigation code here
+
+nav { 
+    .display();
+    flex-direction: column;
+    border: 1px solid red;
+    // width: 90%;
+    margin-left: 10%;
+    margin-right:10%;
+    font-size: 1.5rem;
+    background-color: #F5F5F5;
+
+    @media @mobile {
+        .width();
+        margin-left:0;
+    }
+    
+}
+
+nav h1 {
+    justify-content: center;
+   text-align: center;
+    font-size: 4.0rem;
+    padding-top: 1.0rem;
+    padding-bottom: 2.0rem;
+
+
+    @media @mobile {
+        margin-left:5%;
+    }
+}
+
+     nav div {
+    text-align: center;
+
+        @media @mobile {
+            margin-left: 2%;
+        }
+    }
+
+    a {
+        text-align: center;
+        justify-content: space-evenly;
+        align-content: center;
+        text-decoration: none;
+        color:black;
+        padding-left: 20px;
+
+
+        @media @mobile {
+            padding-left: 15px;
+            padding-right: 10px;
+        }
+     }
+
+
